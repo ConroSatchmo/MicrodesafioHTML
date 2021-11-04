@@ -6,7 +6,10 @@ body {
   font-size: 12px;
 }
 h2 {
+  margin-top: -5px;
   font-size: 24 px;
+  background-color: #ebebeb;
+  color: #666;
 }
 .prec {
   font-size: 18px;
@@ -27,6 +30,7 @@ h2 {
 }
 
 a {
+  text-decoration: none;
   color: black;
 }
 .hamburguesa {
@@ -41,6 +45,7 @@ a {
   width: 30px;
   margin: 30px 0;
   display: inline-block;
+  margin-left: -25px;
 }
 article {
   text-align: center;
@@ -69,4 +74,17 @@ h3 {
 }
 .fin {
   color: #666;
+}
+
+nav {
+  margin-left: -40px;
+}
+
+.logo {
+  margin-left: 30px;
+}
+
+.boton,
+.barra {
+  margin-left: 25px;
 }
