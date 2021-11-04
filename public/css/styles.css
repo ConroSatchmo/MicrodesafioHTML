@@ -1,0 +1,50 @@
+.header {
+  background-color: #eac926;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+h2 {
+  font-size: 24 px;
+}
+.prec {
+  font-size: 18px;
+}
+.descripciones {
+  font-size: 16px;
+  color: #666;
+}
+.desc {
+  font-size: 16;
+  color: #39b54a;
+}
+* {
+  margin: 0;
+}
+.tarjeta {
+  text-align: center;
+}
+
+a {
+  color: black;
+}
+.hamburguesa {
+  text-align: center;
+}
+.burger-menu {
+  background-color: #1259c3;
+  padding: 7px;
+  border-radius: 7px;
+  font-size: 25px;
+  color: #fff;
+  width: 30px;
+  margin: 30px 0;
+  display: inline-block;
+}
+article {
+  text-align: center;
+}
+footer {
+  text-align: center;
+}
