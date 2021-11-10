@@ -6,6 +6,7 @@ body {
   font-size: 12px;
 }
 h2 {
+  text-align: center;
   margin-top: -5px;
   font-size: 24 px;
   background-color: #ebebeb;
@@ -48,7 +49,9 @@ a {
   margin-left: -25px;
 }
 article {
+  border-top: solid 1px #ebebeb;
   text-align: center;
+  margin-bottom: 10px;
 }
 footer {
   text-align: center;
@@ -90,4 +93,45 @@ nav {
 .boton,
 .barra {
   margin-left: 25px;
+}
+main {
+  text-align: center;
+}
+.visita {
+  background-color: #ebebeb;
+  background-size: 100vh;
+}
+.contenedor {
+  border: solid 1px #ebebeb;
+}
+
+@media (min-width: 361px) {
+  h4 {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  .hamburguesa {
+    display: block;
+  }
+
+  @media (min-width: 769px) {
+    nav {
+      display: block;
+    }
+    .hamburguesa {
+      display: none;
+    }
+  }
+  h4 {
+    display: block;
+  }
+  h2 {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+}
+
+.banner {
+  width: 100vw;
 }
