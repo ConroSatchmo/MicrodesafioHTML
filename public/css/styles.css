@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 .header {
   background-color: #eac926;
 }
@@ -12,16 +15,24 @@ h2 {
   background-color: #ebebeb;
   color: #666;
 }
+
+.precdesc {
+  display: flex;
+  margin-bottom: 18px;
+}
 .prec {
   font-size: 18px;
+  flex-grow: 0.3;
+}
+
+.desc {
+  font-size: 18px;
+  color: #39b54a;
+  flex-grow: 0.7;
 }
 .descripciones {
   font-size: 16px;
   color: #666;
-}
-.desc {
-  font-size: 16;
-  color: #39b54a;
 }
 * {
   margin: 0;
@@ -35,18 +46,18 @@ a {
   color: black;
 }
 .hamburguesa {
-  text-align: center;
+  padding-bottom: 10px;
 }
-.burger-menu {
+.burger {
   background-color: #1259c3;
-  padding: 7px;
-  border-radius: 7px;
-  font-size: 25px;
-  color: #fff;
-  width: 30px;
-  margin: 30px 0;
-  display: inline-block;
-  margin-left: -25px;
+  color: white;
+  display: block;
+  max-width: 50px;
+  padding: 15px 0;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 20px;
+  margin: auto;
 }
 article {
   border-top: solid 1px #ebebeb;
@@ -57,6 +68,7 @@ footer {
   text-align: center;
 }
 .truck {
+  font-size: 30px;
   color: #39b54a;
 }
 .card {
@@ -94,9 +106,7 @@ nav {
 .barra {
   margin-left: 25px;
 }
-main {
-  text-align: center;
-}
+
 .visita {
   background-color: #ebebeb;
   background-size: 100vh;
@@ -104,32 +114,20 @@ main {
 .contenedor {
   border: solid 1px #ebebeb;
 }
+nav {
+  display: none;
+}
 
 @media (min-width: 361px) {
-  h4 {
-    display: none;
-  }
   nav {
-    display: none;
+    display: block;
   }
   .hamburguesa {
-    display: block;
+    display: none;
   }
+}
 
-  @media (min-width: 769px) {
-    nav {
-      display: block;
-    }
-    .hamburguesa {
-      display: none;
-    }
-  }
-  h4 {
-    display: block;
-  }
-  h2 {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-  }
+@media (min-width: 769px) {
 }
 
 .banner {
