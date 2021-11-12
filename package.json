@@ -1,15 +1,24 @@
 {
-  "name": "microdesafio",
+  "name": "mercadoliebre",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FabricioGodoy/mercadoLiebre.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FabricioGodoy/mercadoLiebre/issues"
+  },
+  "homepage": "https://github.com/FabricioGodoy/mercadoLiebre#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "nodemon": "^2.0.15"
   }
 }
