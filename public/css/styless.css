@@ -28,7 +28,7 @@ h3 {
 .logo {
   width: 200px;
   margin-left: 20px;
-  margin-top: 30px
+  margin-top: 30px;
 }
 .copy-header {
   font-weight: 400;
@@ -50,10 +50,9 @@ h3 {
   display: inline-block;
   padding: 1px 0;
   font-size: 17px;
-  font-l
 }
 .burger-menu {
-  background-color:#1259c3;
+  background-color: #1259c3;
   color: white;
   display: block;
   max-width: 50px;
@@ -145,7 +144,9 @@ p {
   .main-nav-header {
     display: block;
   }
-  .burger-menu{display: none;}
+  .burger-menu {
+    display: none;
+  }
   .logo {
     width: 250px;
   }
@@ -173,31 +174,31 @@ p {
     margin: 0;
   }
 
-@media (min-width: 769px) {
-  .logo {
-    width: 250px;
-  }
-  .main-header-top-bar {
-    max-width: 1200px;
-    display: flex;
-
-  }
-  .main-header-top-bar {
-    align-items: center;
-  }
-  .main-nav-header {
-    margin-top: 40px;
-  }
-  .main-nav-header li {
-    margin: 0 10px;
-  }
-  .main-nav-header a {
-    font-size: 19px;
-  }
-  .copy-header {
-    max-width: none;
-    font-size: 22px;
-    font-weight: 400;
-    margin: 0;
+  @media (min-width: 769px) {
+    .logo {
+      width: 250px;
+    }
+    .main-header-top-bar {
+      max-width: 1200px;
+      display: flex;
+    }
+    .main-header-top-bar {
+      align-items: center;
+    }
+    .main-nav-header {
+      margin-top: 40px;
+    }
+    .main-nav-header li {
+      margin: 0 10px;
+    }
+    .main-nav-header a {
+      font-size: 19px;
+    }
+    .copy-header {
+      max-width: none;
+      font-size: 22px;
+      font-weight: 400;
+      margin: 0;
+    }
   }
 }
