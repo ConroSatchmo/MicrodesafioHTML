@@ -108,7 +108,7 @@ article {
   margin-top: 10px;
   background-color: white;
 }
-.caja {
+.box {
   border-top: solid 1px #ebebeb;
   display: flex;
   flex-direction: column;
@@ -229,6 +229,10 @@ p {
     font-size: 22px;
     font-weight: 400;
     margin: 0;
+  }
+  .first-section,
+  .second-section {
+    display: flex;
   }
 
   @media (min-width: 769px) {
