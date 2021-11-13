@@ -29,8 +29,9 @@ footer p {
   padding: 10px;
   margin: auto;
 }
+
 .logo {
-  width: 200px;
+  width: 50%;
   margin-left: 20px;
   margin-top: 30px;
 }
@@ -43,16 +44,13 @@ footer p {
   display: none;
 }
 
-.main-nav-header ul {
+.main-nav-bar ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
-.main-nav-header a {
+.main-nav-bar a {
   text-decoration: none;
   color: #222222;
-  display: inline-block;
   padding: 1px 0;
   font-size: 17px;
 }
@@ -68,6 +66,11 @@ footer p {
   border-radius: 8px;
 }
 
+.bar {
+  border-radius: 5px;
+  width: 50%;
+  height: 25px;
+}
 .footer-icon {
   text-align: center;
   font-size: 2em;
@@ -153,14 +156,53 @@ p {
 .main-header-top-bar {
   margin: left 10px;
 }
+.main-nav-bar {
+  display: none;
+}
 
 @media (min-width: 361px) {
-  article {
+  .cuotas {
+    margin-right: 25px;
+  }
+  .barraboton {
+    width: 50vw;
+  }
+  .top-header {
+    display: flex;
+  }
+
+  .main-nav-bar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-nav-bar li {
+    margin: 0 10px;
+  }
+
+  .lista1,
+  .lista2 {
+    display: flex;
+  }
+  .lista2 {
+    margin-right: 15px;
+  }
+
+  .bar {
+    border-radius: 5px;
+
+    height: 40px;
+  }
+  .button {
+    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+  }
+
+  .article {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
-  .main-nav-header {
-    display: block;
-  }
+
   .burger-menu {
     display: none;
   }
@@ -175,13 +217,11 @@ p {
   .main-header-top-bar {
     margin-left: 15px;
   }
-  .main-nav-header {
+  .main-nav-bar {
     margin-top: 40px;
   }
-  .main-nav-header li {
-    margin: 0 10px;
-  }
-  .main-nav-header a {
+
+  .main-nav-bar a {
     font-size: 19px;
   }
   .copy-header {
@@ -192,6 +232,12 @@ p {
   }
 
   @media (min-width: 769px) {
+    .bar {
+      margin-left: 10px;
+    }
+    .button {
+      padding-left: 10px;
+    }
     .logo {
       width: 250px;
     }
@@ -208,7 +254,7 @@ p {
     .main-nav-header li {
       margin: 0 10px;
     }
-    .main-nav-header a {
+    .main-nav-bar a {
       font-size: 19px;
     }
     .copy-header {
