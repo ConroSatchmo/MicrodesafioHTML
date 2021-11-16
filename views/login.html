@@ -23,5 +23,61 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="top-bar">
+        <section class="logo">
+          <img
+            src="/images/logo-mercado-liebre.svg"
+            alt="Logo Mercado Liebre"
+          />
+        </section>
+        <section class="busqueda">
+          <input type="text" placeholder="Buscar productos, marcas y más..." />
+          <i class="fas fa-search"></i>
+        </section>
+        <section class="tarjetas_header">
+          <i class="fas fa-hand-holding-usd"></i>
+          <p>Comprá en cuotas y sin tarjeta de crédito</p>
+        </section>
+      </div>
+
+      <nav>
+        <ul class="site-bar">
+          <li><a href="#">Ofertas</a></li>
+          <li><a href="#">Tiendas Oficiales</a></li>
+          <li><a href="#">Vender</a></li>
+          <li><a href="#">Ayuda</a></li>
+        </ul>
+        <ul class="login-bar">
+          <li>
+            <a href="/register">Creá tu cuenta</a><i class="far fa-id-card"></i>
+          </li>
+          <li>
+            <a href="/login">Ingresá</a><i class="fas fa-sign-in-alt"></i>
+          </li>
+          <li>
+            <a href="#">Mis compras</a><i class="fas fa-shopping-basket"></i>
+          </li>
+        </ul>
+        <div class="burger-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+    <form action="/" method="POST" class="create-form">
+      <div class="login">
+          <label>Nombre de usuario:</label>
+          <input type="text" name="usuario" class="control">
+      </div>
+
+      <div class="login">
+          <label>Contraseña:</label>
+          <input type="password" name="contraseña" class="control">
+      </div>
+
+      <button type="submit" name="enviar" value="enviar" class="enviar">Enviar</button>
+</body>
+</html>
+  </body>
 </html>

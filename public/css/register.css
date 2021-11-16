@@ -10,6 +10,8 @@
   margin-left: 25%;
   margin-right: 25%;
   min-width: 400px;
+  border-radius: 10px;
+  border: solid 2px #1259c3;
 }
 
 input[type="text"] {
@@ -56,7 +58,7 @@ input[type="file"] {
 input[type="password"] {
   width: 300px;
   padding: 12px;
-  resize: vertical;
+
   text-align: center;
   border-radius: 8px;
 }
@@ -67,9 +69,13 @@ input:focus {
 .botones {
   display: flex;
   justify-content: center;
+  margin-bottom: 5px;
 }
-
-@media (max-width: 361px) {
+.intereses {
+  display: flex;
+  margin-left: 50px;
+}
+@media (max-width: 767px) {
   .formulario {
     display: none;
   }

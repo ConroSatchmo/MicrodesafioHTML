@@ -24,48 +24,48 @@
     ></script>
   </head>
   <body>
-    <header class=' main-header'>
-      <div class= "top-header">
-      <div class='main-header-top-bar'>
-      <img src=".\images\logo-mercado-liebre.svg" class="logo">
-      
-          <br>
-      <div class="barraboton">
-          <input type="search" name="busqueda" placeholder="buscar productos, marcas" class="bar">
-      
-      <button class="button"><i class="fas fa-search"></i></button>
-  </div> 
-  </div>
-  <br> 
-      <div class="cuotas">
-      <h2 class='copy-header'>
+    <header>
+      <div class="top-bar">
+        <section class="logo">
+          <img
+            src="/images/logo-mercado-liebre.svg"
+            alt="Logo Mercado Liebre"
+          />
+        </section>
+        <section class="busqueda">
+          <input type="text" placeholder="Buscar productos, marcas y más..." />
+          <i class="fas fa-search"></i>
+        </section>
+        <section class="tarjetas_header">
           <i class="fas fa-hand-holding-usd"></i>
-          Compra en cuotas y sin tarjeta de crédito
-      </h2>
-  </div>
-  </div> 
-      <br>
-      <br>
-    
-      <a href="#" class="burger-menu">
+          <p>Comprá en cuotas y sin tarjeta de crédito</p>
+        </section>
+      </div>
+
+      <nav>
+        <ul class="site-bar">
+          <li><a href="#">Ofertas</a></li>
+          <li><a href="#">Tiendas Oficiales</a></li>
+          <li><a href="#">Vender</a></li>
+          <li><a href="#">Ayuda</a></li>
+        </ul>
+        <ul class="login-bar">
+          <li>
+            <a href="/register">Creá tu cuenta</a><i class="far fa-id-card"></i>
+          </li>
+          <li>
+            <a href="/login">Ingresá</a><i class="fas fa-sign-in-alt"></i>
+          </li>
+          <li>
+            <a href="#">Mis compras</a><i class="fas fa-shopping-basket"></i>
+          </li>
+        </ul>
+        <div class="burger-menu">
           <i class="fas fa-bars"></i>
-      </a>
-      <br>
-      <nav class='main-nav-bar'>
-          <ul class='lista1'>
-              <li><a href="#">Ofertas</a></li>
-              <li><a href="#">Tiendas Oficiales</a></li>
-              <li><a href="#">Vender</a></li>
-              <li><a href="#">Ayuda</a></li>
-          </ul>
-          <ul class='lista2'>
-              <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
-              <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
-              <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
-          </ul>
+        </div>
       </nav>
-  </header>
-    <form class="formulario" action="/register" method="post">
+    </header>
+    <form class="formulario" action="/" method="post">
         <div class="box">
         <div class="nombre">
         <label for="nombre"></label>
@@ -131,35 +131,43 @@
           <label for="comprador">Comprador</label>
           <input type="radio" name="compradorVendedor" value="vendedor" id="vendedor">
           <label for="vendedor">Vendedor</label>
-          <div class="intereses"><h3>Intereses</h3>
+          <div class="texto-intereses"><h3>Intereses</h3>
           </div>
           <div>
+          <div class="intereses">
             <label class="checkbox" ><input type="checkbox" name="Intereses" id="electro" value="electro" required>  Electro</label>
             
           </div>
-          <div>
+          <div class="intereses">
             <label class="checkbox"><input type="checkbox" name="Intereses" id="moda" value="moda">  Moda</label>
           </div>
-          <div>
+          <div class="intereses">
             <label class="checkbox"><input type="checkbox" name="Intereses" id="hogar" value="hogar">  Hogar</label>
           </div>
-          <div>
+          <div class="intereses">
             <label class="checkbox"> <input type="checkbox" name="Intereses" id="jugueteria" value="jugueteria">  Juguetería</label>
           </div>
-          <div>
+          <div class="intereses">
             <label class="checkbox"> <input type="checkbox" name="Intereses" id="vidaSAna" value="vidaSAna">  Vida sana</label>
             </div>
+          
             <div class="foto">
               <label for="file"><h3>Elija una foto de usuario</h3></label>
               <br>
               <input type="file" accept=".jpg, .png, .pdf" name="foto" value="foto" id="foto" required>
             </div>
-            <div class="password"> 
-              <label for="password"> <h3>Ingrese su contraseña</h3></label>
-              <input type="password" name="password" id="password" value="password" required> 
+            <br>
+            <div><h3>Ingrese su contraseña</h3></div>
+            <br>
+            <div class="Password"> 
+              <label for="Password"> </label>
+              <input type="password" name="Password" id="Password" value="Password" required> 
             </div>
+            <br>
+            <div><h3>Confirme su contraseña</h3</div>
+              <br>
             <div class="rePassword"> 
-              <label for="rePassword"> <h3>Confirme su contraseña</h3></label>
+              <label for="rePassword" ></label>
               <input type="password" name="rePassword" id="rePassword" value="rePassword" required> 
             </div>
             <br>
@@ -172,6 +180,7 @@
               <label for="borrar"></label>
               <input type="reset" value="borrar" name="borrar" id="borrar" >
             </div>
+            <br>
           </section>
 
         

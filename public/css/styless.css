@@ -233,6 +233,9 @@ input[type="file"] {
 }
 /*TABLET*/
 @media (min-width: 425px) {
+  .burger-menu {
+    display: none;
+  }
   .producto {
     width: 45%;
   }
@@ -249,20 +252,6 @@ input[type="file"] {
   .logo {
     max-width: 150px;
   }
-}
-/*FIN TABLET */
-
-/*DESKTOP*/
-@media (min-width: 769px) {
-  header {
-    padding: 10px 50px;
-  }
-  .top-bar {
-    justify-content: space-between;
-  }
-  .burger-menu {
-    display: none;
-  }
   nav {
     display: flex;
     justify-content: space-between;
@@ -273,6 +262,16 @@ input[type="file"] {
     display: flex;
     gap: 1rem;
   }
+}
+
+@media (min-width: 769px) {
+  header {
+    padding: 10px 50px;
+  }
+  .top-bar {
+    justify-content: space-between;
+  }
+
   .descripcion {
     visibility: visible;
   }
