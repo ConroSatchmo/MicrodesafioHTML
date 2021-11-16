@@ -1,15 +1,8 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 .login label {
   margin-bottom: 5px;
   font-style: italic;
   display: block;
 }
-
 .enviar {
   background-color: green;
   border: none;
@@ -19,4 +12,7 @@
   border-radius: 5px;
   margin-left: 35px;
   margin-top: 100px;
+}
+input:focus {
+  border: orange solid 5px;
 }

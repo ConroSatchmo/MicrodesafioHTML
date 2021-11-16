@@ -41,7 +41,6 @@ input[type="date"] {
   resize: vertical;
   text-align: center;
 }
-
 label {
   padding: 12px 12px 12px 0;
   margin-top: 10px;
@@ -75,7 +74,6 @@ input:focus {
   display: flex;
   margin-left: 50px;
 }
-
 @media (max-width: 767px) {
   .formulario {
     display: none;

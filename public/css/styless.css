@@ -175,7 +175,6 @@ section.icono_footer {
   font-size: 2em;
 }
 
-/*TABLET*/
 @media (min-width: 425px) {
   .burger-menu {
     display: none;
