@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="/css/register.css" rel="stylesheet" />
+    <link href="/css/styless.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <script
+      src="https://kit.fontawesome.com/7213ba6fdf.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class=' main-header'>
+      <div class= "top-header">
+      <div class='main-header-top-bar'>
+      <img src=".\images\logo-mercado-liebre.svg" class="logo">
+      
+          <br>
+      <div class="barraboton">
+          <input type="search" name="busqueda" placeholder="buscar productos, marcas" class="bar">
+      
+      <button class="button"><i class="fas fa-search"></i></button>
+  </div> 
+  </div>
+  <br> 
+      <div class="cuotas">
+      <h2 class='copy-header'>
+          <i class="fas fa-hand-holding-usd"></i>
+          Compra en cuotas y sin tarjeta de crédito
+      </h2>
+  </div>
+  </div> 
+      <br>
+      <br>
+    
+      <a href="#" class="burger-menu">
+          <i class="fas fa-bars"></i>
+      </a>
+      <br>
+      <nav class='main-nav-bar'>
+          <ul class='lista1'>
+              <li><a href="#">Ofertas</a></li>
+              <li><a href="#">Tiendas Oficiales</a></li>
+              <li><a href="#">Vender</a></li>
+              <li><a href="#">Ayuda</a></li>
+          </ul>
+          <ul class='lista2'>
+              <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+              <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+              <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+          </ul>
+      </nav>
+  </header>
+    <form class="formulario" action="/register" method="post">
+        <div class="box">
+        <div class="nombre">
+        <label for="nombre"></label>
+        <input
+          type="text"
+          name="nombre"
+          id="nombre"
+          placeholder="Nombre y apellido"
+          required
+        />
+      </div>
+      <div class="box">
+      <div class="nombreDeUsuario">
+        <label for="nombreDeUsuario"></label>
+        <input
+          type="text"
+          name="nombreDeUsuario"
+          id="nombreDeUsuario"
+          placeholder="Nombre de usuario"
+          required
+        />
+      </div>
+      <div class="box">
+        <div class="Email">
+          <label for="Email"></label>
+          <input
+            type="email"
+            name="Email"
+            id="Email"
+            placeholder="E-mail"
+            required
+          />
+        </div>
+        <div class="nacimiento"><h3> Fecha de Nacimiento</h3>
+        </div>
+        <div class="box">
+          <div class="Fecha">
+            <label for="Fecha"></label>
+            <input
+              type="date"
+              name="fecha"
+              id="fecha"
+              placeholder="mm/dd/yyyy"
+              required
+            />
+          </div>
+          <div class="box">
+            <div class="domicilio">
+            <label for="domicilio"></label>
+            <input
+              type="text"
+              name="domicilio"
+              id="domicilio"
+              placeholder="Domicilio"
+              required
+            />
+          </div>
+          <div class="perfil"><h3> Perfil de usuario</h3>
+          </div>
+          <div class="box">
+            <div class="compradorVendedor">
+         <input type="radio" name="compradorVendedor" value="comprador" id="comprador">
+          <label for="comprador">Comprador</label>
+          <input type="radio" name="compradorVendedor" value="vendedor" id="vendedor">
+          <label for="vendedor">Vendedor</label>
+          <div class="intereses"><h3>Intereses</h3>
+          </div>
+          <div>
+            <label class="checkbox" ><input type="checkbox" name="Intereses" id="electro" value="electro" required>  Electro</label>
+            
+          </div>
+          <div>
+            <label class="checkbox"><input type="checkbox" name="Intereses" id="moda" value="moda">  Moda</label>
+          </div>
+          <div>
+            <label class="checkbox"><input type="checkbox" name="Intereses" id="hogar" value="hogar">  Hogar</label>
+          </div>
+          <div>
+            <label class="checkbox"> <input type="checkbox" name="Intereses" id="jugueteria" value="jugueteria">  Juguetería</label>
+          </div>
+          <div>
+            <label class="checkbox"> <input type="checkbox" name="Intereses" id="vidaSAna" value="vidaSAna">  Vida sana</label>
+            </div>
+            <div class="foto">
+              <label for="file"><h3>Elija una foto de usuario</h3></label>
+              <br>
+              <input type="file" accept=".jpg, .png, .pdf" name="foto" value="foto" id="foto" required>
+            </div>
+            <div class="password"> 
+              <label for="password"> <h3>Ingrese su contraseña</h3></label>
+              <input type="password" name="password" id="password" value="password" required> 
+            </div>
+            <div class="rePassword"> 
+              <label for="rePassword"> <h3>Confirme su contraseña</h3></label>
+              <input type="password" name="rePassword" id="rePassword" value="rePassword" required> 
+            </div>
+            <br>
+            <section class="botones">
+            <div>
+              <label for="enviar"></label>
+              <input type="submit" value="enviar" name="enviar" id="enviar" >
+            </div>
+           <div>
+              <label for="borrar"></label>
+              <input type="reset" value="borrar" name="borrar" id="borrar" >
+            </div>
+          </section>
+
+        
+    </form>
+  </body>
+</html>
