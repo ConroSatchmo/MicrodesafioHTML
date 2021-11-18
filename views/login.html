@@ -22,7 +22,8 @@
       src="https://kit.fontawesome.com/7213ba6fdf.js"
       crossorigin="anonymous"
     ></script>
-  </head>
+    
+    </head>
   <body>
     <header>
       <div class="top-bar">
@@ -65,18 +66,19 @@
         </div>
       </nav>
     </header>
-    <form action="/" method="POST" class="create-form">
+    <form action="/login" method="POST" class="create-form" onsubmit="return validateForm()" name="myForm">
       <div class="login">
           <label>Nombre de usuario:</label>
-          <input type="text" name="usuario" class="control">
+          <input type="text"  class="control" name="userName">
       </div>
 
       <div class="login">
           <label>Contraseña:</label>
-          <input type="password" name="contraseña" class="control">
+          <input type="password" name="contraseña" class="control" name="userPassword">
       </div>
 
       <button type="submit" name="enviar" value="enviar" class="enviar">Enviar</button>
+      <script src="scripts/login.js"></script>
 </body>
 </html>
   </body>

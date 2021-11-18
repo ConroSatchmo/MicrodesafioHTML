@@ -10,10 +10,6 @@ app.use(express.static(publicPath));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.listen(3000, () => {
-  console.log("El servidor corriendo en el puerto 3000");
-});
-
 app.get("/", (req, res) => {
   res.sendFile(path.resolve(__dirname, "./views/home.html"));
 });
@@ -33,5 +29,9 @@ app.post("/register", (req, res) => {
 app.post("/login", (req, res) => {
   console.log(req.body);
 
-  res.sendFile(path.resolve(__dirname, "./views/login.html"));
+  res.sendFile(path.resolve(__dirname, "./views/home.html"));
+});
+
+app.listen(3000, () => {
+  console.log("El servidor corriendo en el puerto 3000");
 });
