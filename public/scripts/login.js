@@ -9,4 +9,9 @@ function validateForm() {
     alert("Debes completar la contraseña");
     return false;
   }
+
+  if (userPassword.length > 0 && userPassword.length < 6) {
+    alert("La contraseña debe tener al menos 6 caracteres");
+    return false;
+  }
 }
