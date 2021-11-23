@@ -13,6 +13,5 @@ function validateForm() {
   if (userPassword.length > 0 && userPassword.length < 6) {
     alert("La contraseña debe tener al menos 6 caracteres");
   } else {
-    console.log("hola");
   }
 }
