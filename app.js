@@ -25,6 +25,9 @@ app.post("/register", (req, res) => {
 
   res.sendFile(path.resolve(__dirname, "./views/register.html"));
 });
+app.listen(process.env.PORT || 4000, () => {
+  console.log("Servidor funcionando");
+});
 
 app.post("/login", (req, res) => {
   console.log(req.body);
